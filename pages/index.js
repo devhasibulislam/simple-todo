@@ -29,7 +29,7 @@ export default function Home() {
 
         <main className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           {/* display added todo */}
-          {todo.map((tdl) => (
+          {todo?.map((tdl) => (
             <Card key={tdl._id} todo={tdl} />
           ))}
 
